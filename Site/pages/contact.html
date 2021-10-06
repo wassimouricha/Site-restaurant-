@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="icon" type="image/png" href="../ressources/header/logo.png" />
+    <title>Le Garde Manger</title>
+    
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous" />
+
+    <!-- CSS Bootstrap 4 -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+
+    <!-- CSS Personnalisé -->
+    <link rel="stylesheet" href="../styles/index.css" />
+
+  </head>
+
+  <body>
+    <!-- Header -->
+
+    <header class="border-bottom border-dark">
+      <nav class="navbar navbar-expand-md navbar-light bg-info">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">
+                <img src="../ressources/header/logo.png" alt="Logo" id="logo" />
+            </a>
+            
+            <p class="navbar-text text-white"><span id="grandtitre">Le Garde Manger</span><br>1 Rue du Général de Gaule<br>59400 Cambrai</p>
+            
+      
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
+                
+              <i class="fas fa-concierge-bell fa-2x"></i>
+            
+            </button>
+      
+            <div class="collapse navbar-collapse" id="navbarNav">
+            
+                <ul class="navbar-nav ml-auto">
+    
+                <li class="nav-item">
+    
+                    <a class="nav-link text-white" href="../index.html">Accueil</a>
+    
+                </li>
+    
+                <li class="nav-item">
+    
+                    <a class="nav-link text-white" href="quiSommesNous.html">À propos</a>
+    
+                </li>
+    
+                <li class="nav-item">
+    
+                    <a class="nav-link text-white" href="menus.html">Menus</a>
+    
+                </li>
+    
+                <li class="nav-item">
+    
+                    <a class="nav-link text-white" href="galerie.html">Galerie</a>
+    
+                </li>
+
+                <li class="nav-item">
+    
+                  <a class="nav-link text-white activeHeader" href="#">Contact</a>
+  
+              </li>
+    
+                </ul>
+    
+            </div>
+    
+        </div>
+    
+    </nav>
+    </header>
+
+    <!-- Marquee -->
+
+    <div class="container-fluid bg-danger border-bottom border-dark d-flex text-white pt-2 containerMarquee">
+      <p class="txtMarquee">- RÉSERVATION TOUS LES JOURS ENTRE 11H00 ET 23H00&nbsp;</p>
+      <p class="txtMarquee">- RÉSERVATION TOUS LES JOURS ENTRE 11H00 ET 23H00&nbsp;</p>
+      <p class="txtMarquee">- RÉSERVATION TOUS LES JOURS ENTRE 11H00 ET 23H00</p>
+    </div>
+
+    <!-- Corps -->
+
+    <main>
+
+          <div class="d-flex flex-column text-center">
+            
+            <h1 >Formulaire de contact </h1>
+            <h2>N'hésitez pas à nous dire ce que vous avez pensé ! </h2>
+            <form  action="https://formspree.io/f/xdoyjlvq" method="POST" class="d-flex flex-column justify-content-center align-items-center">
+              
+              <div class="form-group col-lg-6">
+                <label for="name">nom</label>
+                <input type="text" class="form-control text-center border border-dark" id="name"  placeholder="Entrez votre nom " required name="name">
+                
+              </div>
+              
+              <div class="form-group col-lg-6">
+                <label for="name">prénom</label>
+                <input type="text" class="form-control text-center border border-dark" id="name"  placeholder="Entrez votre prénom " required name="name">  
+              </div>
+              
+              <div class="form-group col-lg-6">
+                <label for="email">email</label>
+              <input type="email" class="form-control text-center border border-dark" id="email" placeholder="Entrez votre email" name="Client">
+            </div>
+            
+            <div class="form-group  col-lg-8 ">
+              <label for="message">Message</label>
+              <textarea class="form-control  border border-dark" id="message" rows="6" name="message" required placeholder="Entrez votre message"></textarea>
+            </div>
+            
+            <button type="envoyer" class="btn btn-primary mb-3 w-100 col-lg-8 ">Envoyer</button>
+          </form>
+          
+        </div>
+    </main>
+
+    <!-- Footer -->
+
+    <footer class="border-top border-dark">
+      <div class="container-fluid py-3 bg-info">
+        <div class="row d-flex align-items-center">
+            <span class="col-sm-12 col-md-2 col-lg-2 my-1 mr-3 text-center text-white">03.00.00.00.00</span>
+            <a class="col-sm-12 col-md-2 col-lg-2 my-1 text-center text-white" href="mailto:legardemanger@gmail.com">legardemanger@gmail.com</a>          
+            <ul class="nav col-sm-12 col-md col-lg ml-auto mt-3 list-unstyled justify-content-center">
+              <li class="mx-1"><a href="https://twitter.com/?lang=fr"><img src="../ressources/footer/twitter.png" width="34" height="34" alt="twitter"></a></li>
+              <li class="mx-1"><a href="https://www.instagram.com/"><img src="../ressources/footer/instagram.png" width="34" height="34" alt="instagram"></a></li>
+              <li class="mx-1"><a href="https://fr-fr.facebook.com/"><img src="../ressources/footer/facebook.png" width="34" height="34" alt="facebook"></a></li>
+            </ul>
+        </div>
+      </div>
+    </footer>
+
+
+    <!-- Jquery Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    
+    <!-- JavaScript Bootstrap 4 -->   
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <!-- JavaScript Personnalisé -->
+    <script src="../scripts/index.js"></script>
+    
+  </body>
+</html>

@@ -1,0 +1,174 @@
+/* Général */
+
+*, ::before, ::after
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    height: 100vh;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+}
+
+/* Header */
+
+header a
+{
+    font-size: 0.9em;
+    text-align: center;
+    text-transform: uppercase;
+    
+}
+
+header li:hover
+{
+    border-top: 2px solid white; 
+    border-bottom: 2px solid white; 
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.activeHeader
+{
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+#grandtitre
+{
+    font-size: 2.5vmax;
+}
+
+#logo
+{
+    filter:drop-shadow(0 0.10vw 0.10vw #000000) drop-shadow(0.10vw 0vw 0.10vw #000000);
+    animation: animLogo 3s infinite linear;
+}
+
+@keyframes animLogo
+{
+    from
+    {
+        transform: rotate(0);
+    }
+    to
+    {
+        transform: rotateY(360deg);
+    }
+}
+
+@media screen and (max-width:400px)
+{
+    #logo
+    {
+        display: none;
+    }
+}
+
+/* Marquee */
+
+.containerMarquee 
+{
+    overflow-x:hidden;
+}
+
+.txtMarquee 
+{
+    flex-shrink: 0;
+    font-size: 5vmin;
+    animation: scrollTxt 10s linear infinite;
+}
+
+@keyframes scrollTxt 
+{
+    0% 
+    {
+      transform: translateX(0%);
+    }
+    100% 
+    {
+      transform: translateX(-100%)
+    }
+}
+
+/* Accueil */
+
+.carousel
+{
+    width: 100%;
+    border-radius: 5px;
+}
+
+.carousel img
+{
+    width: 165%;
+    border-radius: 5px;
+}
+
+@media screen and (max-width:1200px)
+{
+    .carousel img
+    {
+        width: 197%;
+    }
+
+}
+
+@media screen and (max-width:1000px)
+{
+    iframe
+    {
+        margin-top: 10px;
+    }
+}
+
+/* A propos */
+
+.cadreTexte 
+{
+    font-size: 3vmin;
+    line-height: 1.5;
+}
+
+.cadreTexte strong 
+{
+    font-size: 2.8vmin;
+}
+
+.photoResto 
+{
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+/* Menus */
+
+.gambas, .jacque, .sorbet 
+{
+    width: 200px;
+    height: 250px;
+    border: 5px double black;
+}
+
+/* Contact */
+
+label
+{
+    opacity: 0;
+}
+
+.formContact h2, .formContact h3
+{
+    color:rgb(0, 0, 0);
+
+}
+
+
+
+
+
